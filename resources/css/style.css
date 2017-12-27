@@ -1,0 +1,85 @@
+/* Universal Styles */
+
+html {
+  font-family: 'Helvetica', serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  /*border-radius: 4px;*/
+  /*padding: 16px 15px;*/
+  color: red;
+  text-align: center;
+  /*margin-top: 16px 16px;*/
+}
+
+.btn:hover {
+  color: darkgrey;
+  background-color: gray;
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+.lrgbtn {
+  display: inline-block;
+  /*border-radius: 4px;*/
+  /*padding: 16px 15px;*/
+  color: red;
+  text-align: center;
+  /*margin-top: 16px 16px;*/
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: yellow;
+}
+
+.header {
+  display: flex;
+  padding: 16px 16px;
+  align-items: center;
+}
+
+.header img {
+  height: 60px;
+  width: 60px;
+}
+
+.header span {
+  font-size: 32px;
+}
+
+.header .colmar {
+  color: darkgrey;
+}
+
+.header .academy {
+  color: lightgrey;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header li {
+  display: inline;
+  margin-left: 16px;
+}
+
+.header .btn {
+  width: 150px;
+  border: 1px solid black;
+}
