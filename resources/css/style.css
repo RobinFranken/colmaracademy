@@ -10,27 +10,16 @@ a {
 }
 
 .btn {
-  display: inline-block;
-  /*border-radius: 4px;*/
-  /*padding: 16px 15px;*/
-  color: red;
+  display: inline;
+  color: gray;
   text-align: center;
-  /*margin-top: 16px 16px;*/
-}
-
-.btn:hover {
-  color: darkgrey;
-  background-color: gray;
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+  width: auto;
 }
 
 .lrgbtn {
   display: inline-block;
-  /*border-radius: 4px;*/
-  /*padding: 16px 15px;*/
   color: red;
   text-align: center;
-  /*margin-top: 16px 16px;*/
 }
 
 /* Header */
@@ -41,8 +30,8 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  border-bottom: 1px solid black;
-  background-color: yellow;
+  height: 64px;
+  background-color: white;
 }
 
 .header {
@@ -57,7 +46,7 @@ header {
 }
 
 .header span {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .header .colmar {
@@ -69,9 +58,10 @@ header {
 }
 
 .header ul {
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: 550px;
+  margin-right: 24px;
 }
 
 .header li {
@@ -79,48 +69,135 @@ header {
   margin-left: 16px;
 }
 
-.header .btn {
-  width: 150px;
-  border: 1px solid black;
-}
-
 /* Content */
 
 .content {
   display: flex;
-  width: 1232px;
-  margin: 0 auto 78px auto;
-  padding-top: 100px;
+  width: 100%;
+  background-color: white;
+  padding-top: 32px;
 }
 
 /* Banner */
 
 .banner {
+  display: flex;
+  width: 100%;
   margin-top: 32px;
   background-color: gray;
-  display: flex;
 }
 
+.banner img {
+  width: 100%;
+  padding: 32px 24px;
+}
+
+.bannercontent {
+  display: block;
+  width: 50%;
+  padding: 64px 24px;
+  background-color: gray;
+}
+
+.bannercontent h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: darkgray;
+  line-height: 1.1;
+  margin: 25% 48px 5% 24px;
+}
+
+.narrative {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkgray;
+  margin: 5% 48px 5% 24px;
+  line-height: 1.5;
+}
 
 .banner a {
   display: block;
-  width: 300px;
-  padding: 31px 5px;
-  border-radius: 5px;
-  margin: 20% auto;
-  background-color: orange;
+  width: 65%;
+  padding: 8px 8px;
+  margin: 10% 24px;
+  background-color: darkgrey;
   transition-property: background-color;
   transition-duration: 750ms;
   text-align: center;
   font-family: Helvetica;
-  font-size: 32px;
-  color: MintCream;
-}
-
-.bannercontent h2 {
-
+  font-size: 1.25rem;
+  color: white;
 }
 
 a:hover {
   background-color: LimeGreen;
+}
+
+/* Main Content */
+
+.maincontent {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+.maincontent img {
+  width: 100%;
+  margin-right: 24px;
+  padding: 0px 24px 0px 24px;
+}
+
+.mainimage h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: darkgray;
+  line-height: 1.1;
+  margin: 32px 24px 24px 24px;
+}
+
+.mainimage p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: darkgray;
+  margin: 0% 48px 5% 24px;
+  line-height: 1.5;
+}
+
+.mainimage h6 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: darkgray;
+  margin: 0% 48px 32px 24px;
+  line-height: 1.5;
+}
+
+.maincontentsection {
+  display: block;
+  width: 100%;
+  background-color: gray;
+}
+
+.contentbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+}
+
+.imageblock {
+  width: 35%;
+  padding: 0px 12px 12px;
+}
+
+.textblock {
+  width: 65%;
+}
+
+.subtext {
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: lightgray;
+  margin: 5% 48px 5% 24px;
+  line-height: 1.5;
 }
