@@ -14,13 +14,14 @@ a {
   color: gray;
   text-align: center;
   width: auto;
+  padding: 0px 8px;
 }
-
+/*
 .lrgbtn {
   display: inline-block;
   color: red;
   text-align: center;
-}
+}*/
 
 /* Header */
 
@@ -38,15 +39,12 @@ header {
   display: flex;
   padding: 16px 16px;
   align-items: center;
+  flex-grow: 1;
 }
 
 .header img {
   height: 60px;
   width: 60px;
-}
-
-.header span {
-  font-size: 2rem;
 }
 
 .header .colmar {
@@ -57,16 +55,11 @@ header {
   color: lightgrey;
 }
 
-.header ul {
-  display: inline;
+nav ul {
+  font-size: 1rem;
+  display: inline-flex;
   flex-wrap: wrap;
-  margin-left: 550px;
   margin-right: 24px;
-}
-
-.header li {
-  display: inline;
-  margin-left: 16px;
 }
 
 /* Content */
@@ -94,7 +87,7 @@ header {
 
 .bannercontent {
   display: block;
-  width: 50%;
+  width: 40%;
   padding: 64px 24px;
   background-color: gray;
 }
@@ -138,13 +131,12 @@ a:hover {
 .maincontent {
   display: flex;
   width: 100%;
-  background-color: white;
+  background-color: gray;
 }
 
 .maincontent img {
   width: 100%;
-  margin-right: 24px;
-  padding: 0px 24px 0px 24px;
+  padding: 32px 24px;
 }
 
 .mainimage h2 {
@@ -180,24 +172,34 @@ a:hover {
 .contentbox {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  height: auto;
   background-color: yellow;
+  border: 1px solid gray;
 }
 
 .imageblock {
-  width: 35%;
-  padding: 0px 12px 12px;
+  width: 65%;
+  background-color: blue;
+  /*padding: 0px 0px 12px;*/
+}
+
+.imageblock img {
+  max-width: 100%;
+  margin-top: 32px;
+  padding-top: 0px;
+  padding-left: 12px;
 }
 
 .textblock {
-  width: 65%;
+  width: 35%;
+  background-color: orange;
+  line-height: 1rem;
+  margin-top: 24px;
+  margin-left: 5%;
 }
 
-.subtext {
-  font-size: 1.0rem;
-  font-weight: bold;
-  color: lightgray;
-  margin: 5% 48px 5% 24px;
-  line-height: 1.5;
+.textblock .narrative {
+  font-size: 1.25rem;
+  margin-left: 0;
 }
