@@ -16,12 +16,6 @@ a {
   width: auto;
   padding: 0px 8px;
 }
-/*
-.lrgbtn {
-  display: inline-block;
-  color: red;
-  text-align: center;
-}*/
 
 /* Header */
 
@@ -67,6 +61,7 @@ nav ul {
 .content {
   display: flex;
   width: 100%;
+  /*max-width: 960px;*/
   background-color: white;
   padding-top: 32px;
 }
@@ -80,24 +75,30 @@ nav ul {
   background-color: gray;
 }
 
+.bannerimage {
+  max-width: 60%;
+  margin: 32px 24px 24px 24px;
+}
+
 .banner img {
   width: 100%;
-  padding: 32px 24px;
+  /*padding-right: 24px;*/
 }
 
 .bannercontent {
-  display: block;
-  width: 40%;
-  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40%;
   background-color: gray;
 }
 
 .bannercontent h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: bold;
   color: darkgray;
   line-height: 1.1;
-  margin: 25% 48px 5% 24px;
+  margin: 10% 48px 0% 24px;
 }
 
 .narrative {
@@ -112,7 +113,7 @@ nav ul {
   display: block;
   width: 65%;
   padding: 8px 8px;
-  margin: 10% 24px;
+  margin: 5% 24px;
   background-color: darkgrey;
   transition-property: background-color;
   transition-duration: 750ms;
@@ -123,7 +124,7 @@ nav ul {
 }
 
 a:hover {
-  background-color: LimeGreen;
+  background-color: OliveGreen;
 }
 
 /* Main Content */
@@ -131,12 +132,15 @@ a:hover {
 .maincontent {
   display: flex;
   width: 100%;
-  background-color: gray;
+}
+
+.mainimage {
+  max-width: 60%;
+  margin: 0px 24px 24px 24px;
 }
 
 .maincontent img {
   width: 100%;
-  padding: 32px 24px;
 }
 
 .mainimage h2 {
@@ -159,47 +163,88 @@ a:hover {
   font-size: 1rem;
   font-weight: lighter;
   color: darkgray;
-  margin: 0% 48px 32px 24px;
+  margin: 0% 48px 0px 24px;
   line-height: 1.5;
 }
 
 .maincontentsection {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
   width: 100%;
-  background-color: gray;
 }
 
-.contentbox {
+.contentboxwhite {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  height: 300px;
   width: 100%;
-  background-color: yellow;
   border: 1px solid gray;
+  margin-bottom: 1px;
+}
+
+.contentboxgray {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-color: gray;
+  border: 1px double gray;
 }
 
 .imageblock {
-  width: 65%;
-  background-color: blue;
-  /*padding: 0px 0px 12px;*/
+  display: inline;
+  width: 35%;
 }
 
 .imageblock img {
-  max-width: 100%;
-  margin-top: 32px;
-  padding-top: 0px;
+  width: 100%;
+  height: 100%;
   padding-left: 12px;
 }
 
 .textblock {
-  width: 35%;
-  background-color: orange;
+  width: 65%;
   line-height: 1rem;
-  margin-top: 24px;
-  margin-left: 5%;
+  margin: 24px 5% 12px 5%;
+}
+
+.textblock h3 {
+  font-size: 1.0rem;
+  font-weight: bolder;
+  color: darkgrey;
+  margin-left: 0;
 }
 
 .textblock .narrative {
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   margin-left: 0;
+}
+
+/* Courses section */
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: orange;
+  align-items: center;
+}
+
+.learning h1 {
+  font-size: 1.5rem;
+  padding: 32px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 72px 24px 72px;
+}
+
+.course {
+  max-width: 25%;
 }
