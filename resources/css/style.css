@@ -171,14 +171,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
+  height: 92%;
   width: 100%;
 }
 
 .contentboxwhite {
   display: flex;
   align-items: center;
-  height: 300px;
+  height: 225px;
   width: 100%;
   border: 1px solid gray;
   margin-bottom: 1px;
@@ -187,7 +187,7 @@ a:hover {
 .contentboxgray {
   display: flex;
   align-items: center;
-  height: 300px;
+  height: 225px;
   width: 100%;
   background-color: gray;
   border: 1px double gray;
@@ -228,23 +228,100 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: orange;
+  background-color: gray;
   align-items: center;
 }
 
-.learning h1 {
+.learning h1,
+.exhibition h1 {
   font-size: 1.5rem;
-  padding: 32px;
+  margin: 48px 0;
+  text-align: center;
+}
+
+.learning h4,
+.exhibition h4 {
+  font-size: 1.0rem;
+  line-height: 1.4;
+}
+
+.learning p.coursetag {
+  color: yellow;
 }
 
 .courses {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0px 72px 24px 72px;
+  width: 85%;
 }
 
 .course {
-  max-width: 25%;
+  display: flex;
+  background-color: white;
+  max-width: 32%;
+  flex-direction: column;
+  margin-bottom: 32px;
+  box-shadow: 3px 3px yellow;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  margin: 16px 16px 24px;
+}
+
+.description p {
+  margin-top: 8px;
+}
+
+/* Thesis Section */
+
+.exhibit {
+  display: flex;
+  width: 100%;
+}
+
+.video-column {
+  width: 60%;
+  margin: 0 24px 32px;
+}
+
+.video-description {
+  margin-top: 24px;
+}
+
+.video-description p {
+  margin-top: 8px;
+}
+
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-videos {
+  display: flex;
+  align-items: center;
+}
+
+.more-videos:first-child {
+  background-color: blue;
+}
+
+.video-thumbnail {
+  width: 35%;
+  margin: 16px;
+}
+
+.video-thumbnail img {
+  width: 100%;
+}
+
+.video-text {
+  width: 65%;
 }
